@@ -11,7 +11,7 @@ namespace LearnHub.Models.MappingProfiles
     {
         public AutoMapping()
         {
-            CreateMap<RegistrationModel, AppUser>();
+            CreateMap<RegistrationModel, AppUser>().ForMember(au=>au.UserName, map => map.MapFrom(vm => vm.Email));
         }
     }
 }
