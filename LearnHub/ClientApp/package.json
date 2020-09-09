@@ -25,10 +25,14 @@
     "aspnet-prerendering": "^3.0.1",
     "bootstrap": "^4.3.1",
     "core-js": "^3.3.3",
+    "file-saver": "^2.0.2",
     "jquery": "3.4.1",
+    "ng2-pdf-viewer": "^6.3.2",
+    "ngx-extended-pdf-viewer": "^4.1.2",
     "oidc-client": "^1.9.1",
     "popper.js": "^1.16.0",
     "rxjs": "^6.5.3",
+    "save": "^2.4.0",
     "zone.js": "0.9.1"
   },
   "devDependencies": {

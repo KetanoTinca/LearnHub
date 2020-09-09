@@ -1,0 +1,17 @@
+<div class="container mt-2">
+
+    <form [formGroup]="amdahlForm" (ngSubmit)="onSubmit()">
+        <label>
+            a: 
+            <input class="mr-2"type="text" formControlName="speedUp">
+        </label>
+        <label>
+            fa: 
+            <input type="text" formControlName="ussageTime">
+        </label>
+        
+        <h4>Result = {{result}}</h4>
+        
+        <button class="btn btn-primary" type="submit">Calculate</button>
+    </form>
+</div>

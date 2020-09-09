@@ -1,0 +1,30 @@
+<div>
+    <div class="row">
+        <div class="col-2">
+            <div class="menu d-flex flex-column h-100">
+                <div class="container-fluid">
+                    <p class="title noselect">Courses</p>
+                </div>
+                <nav id="sidebar" class=" flex-grow-1  overflow-auto scroll-color-colors scroll-width-thin ">
+                    <ul class="list-unstyled components">
+                        <p *>Please add a new session</p>
+
+                        <a class="noselect list-item d-flex flex-grow-1 justify-content-between" routerLink="home">
+                            <p>Course1</p>
+
+                        </a>
+
+
+
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+        <div class="col-9">
+            <pdf-viewer [src]="pdfSrc" [render-text]="true"></pdf-viewer>
+        </div>
+    </div>
+
+
+</div>

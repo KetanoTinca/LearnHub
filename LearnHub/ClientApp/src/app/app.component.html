@@ -1,6 +1,18 @@
 <body>
-  <app-nav-menu></app-nav-menu>
-  <div class="container">
+  <nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="home">Home</a>
+        <a class="nav-item nav-link" routerLink="">Fetch</a>
+        <a class="nav-item nav-link" routerLink="courses">Courses</a>
+        <a class="nav-item nav-link" routerLink="exercises">Exercise</a>
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+         
+    </div>
+</nav>
+
+<!-- main app container -->
+<div>
     <router-outlet></router-outlet>
-  </div>
+</div>
+
 </body>
